@@ -16,10 +16,10 @@ export default function VideoMetaModal({
   onSave,
 }: Props) {
   const initialState = {
-    title: employer.projects[videoIndex].title || "",
-    duration: employer.projects[videoIndex].duration || "",
-    type: employer.projects[videoIndex].type || "",
-    contribution: employer.projects[videoIndex].contribution || "",
+    title: employer?.projects[videoIndex].title || "",
+    duration: employer?.projects[videoIndex].duration || "",
+    type: employer?.projects[videoIndex].type || "",
+    contribution: employer?.projects[videoIndex].contribution || "",
   };
 
   const [isEditing, setIsEditing] = useState(false);
@@ -68,7 +68,7 @@ export default function VideoMetaModal({
 
           {!isEditing && (
             <iframe
-              src={employer.projects[videoIndex].video}
+              src={employer?.projects[videoIndex].video}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-60 lg:h-full lg:w-1/2 rounded object-cover"
@@ -81,7 +81,7 @@ export default function VideoMetaModal({
             } overflow-y-auto py-2 lg:py-0 md:py-0`}
           >
             <div className="flex mb-4 justify-between">
-              <h2 className="text-xl font-semibold">{employer.name}</h2>
+              <h2 className="text-xl font-semibold">{employer?.name}</h2>
               <X size={20} onClick={onClose} className="cursor-pointer" />
             </div>
 

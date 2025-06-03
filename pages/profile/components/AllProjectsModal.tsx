@@ -33,12 +33,12 @@ export default function AllProjectsModal({ employer, onClose, onUpdate }: Props)
       {/* Modal */}
       <div className="relative z-10 bg-white p-4 sm:p-6 rounded-lg shadow-xl w-full max-w-5xl max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold">All Projects - {employer.name}</h2>
+          <h2 className="text-xl font-bold">All Projects - {employer?.name}</h2>
           <X className="cursor-pointer" onClick={onClose} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {employer.projects.map((project, index) => (
+          {employer?.projects.map((project, index) => (
             <div
               key={index}
               className="relative cursor-pointer group"
