@@ -24,7 +24,7 @@ export default function EditBasicInfoModal({ onClose }: Props) {
       />
       <form
         onSubmit={handleSave}
-        className="relative z-10 bg-white p-6 rounded-lg shadow-xl w-full max-w-lg"
+        className="relative z-10 m-5 bg-white p-6 rounded-lg shadow-xl w-full max-w-lg"
       >
         <h2 className="text-xl font-bold mb-4">Edit Basic Info</h2>
 
