@@ -57,7 +57,7 @@ export default function JobMatchPage() {
           {jobs.map((job, idx) => (
             <div
               key={idx}
-              className="border flex flex-col gap-2 justify-between rounded-lg p-4 shadow hover:shadow-md transition"
+              className="border flex flex-col gap-2 justify-between rounded-lg p-4 shadow-md hover:shadow-2xl transition"
             >
               <div>
                 <h2 className="text-xl font-semibold mb-1">{job.title}</h2>

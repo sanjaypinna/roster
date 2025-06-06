@@ -8,9 +8,13 @@ const Home = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // 🔄 In a real scenario, you'd call an API here to parse the portfolio URL
-    // and use the session or backend response to get the username.
-    // For now, we're mocking that and directly redirecting.
+    // 🔄 In a real scenario, we'd call an API here to parse the portfolio URL
+    // POST /api/portfolio/submit
+    // {
+    //   "success": true,
+    //   "username": "sanjay",
+    //   "message": "Data extraction started/successful"
+    // }
 
     const username = "sanjay";
     router.push(`/profile/${username}`);

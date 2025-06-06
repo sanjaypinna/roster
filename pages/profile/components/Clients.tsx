@@ -51,7 +51,7 @@ const Clients = ({ profile }: { profile: Profile }) => {
                       height="250"
                       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                      className="rounded pointer-events-none"
+                      className="rounded pointer-events-none shadow-md hover:shadow-2xl"
                     />
                     <div className="absolute inset-0 z-10" />
                   </div>

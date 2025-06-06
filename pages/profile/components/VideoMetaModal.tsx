@@ -59,8 +59,8 @@ export default function VideoMetaModal({
       />
 
       <div
-        className={`relative z-10 bg-white p-4 sm:p-6 rounded-lg shadow-xl  max-w-3xl ${
-          !isEditing ? "w-full" : "w-1/2"
+        className={`relative z-10 bg-white p-4 sm:p-6 rounded-lg shadow-xl w-full md:max-w-2xl lg:max-w-3xl ${
+          !isEditing ? "w-full" : "lg:w-1/2"
         }`}
       >
         <div className="flex flex-col justify-center lg:flex-row gap-6 h-[80vh] md:h-[70vh] lg:h-[60vh] overflow-hidden">
@@ -71,7 +71,7 @@ export default function VideoMetaModal({
               src={employer?.projects[videoIndex].video}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-60 lg:h-full lg:w-1/2 rounded object-cover"
+              className="w-full h-60 lg:h-full lg:w-1/2 rounded object-cover shadow-md hover:shadow-2xl"
             />
           )}
           {/* Details/Form */}

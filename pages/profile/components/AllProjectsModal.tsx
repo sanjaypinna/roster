@@ -48,7 +48,7 @@ export default function AllProjectsModal({ employer, onClose, onUpdate }: Props)
                 src={project.video}
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="w-full h-48 rounded pointer-events-none"
+                className="w-full h-48 rounded pointer-events-none shadow-md hover:shadow-2xl"
               />
               <div className="absolute inset-0 z-10" />
             </div>

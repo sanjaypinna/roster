@@ -16,6 +16,9 @@ export default function ProfilePage() {
 
   useEffect(() => {
     if (username && typeof username === "string") {
+      // 🔄 In a real scenario, we'd call an API here to get the profile data
+      // GET /api/profile/username
+
       const data = getMockProfile(username);
       setProfile(data as Profile);
     }
